@@ -1,0 +1,783 @@
+body{
+	background:url(../img/Valentines-Day/body-bg.png);
+	width:100%;
+	height:100%;
+	background-size: cover;
+}
+body {
+	font-family: "微软雅黑";
+}
+
+.clear:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+/*gohome*/
+.gohome{
+	position: fixed;
+	right: 50px;
+	bottom: 30px;
+	z-index: 9999;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: red;
+	background-color: #8C459D;
+}
+.gohome a{
+	display: block;
+	width: 80px;
+	height: 80px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 80px;
+	font-size: 24px;
+	font-weight: 500;
+	color: #fff;
+}
+
+ul{
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul li:last-child {
+	margin-right: 0;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.w {
+	width: 1200px;
+	margin: 0px auto;
+}
+
+ul li {
+	float: left;
+}
+
+ul {
+	list-style: none;
+}
+.hover{
+	transition: all .2s linear;
+}
+.hover:hover{
+	box-shadow: 0px 15px 30px rgba(0,0,0,0.1);
+	-webkit-transform: translate3d(0px,-2px ,0px);
+	transform: translate3d(0px,-2px ,0px);
+	z-index: 2;
+}
+/*common end*/
+.top-box{
+	width:100%;
+}
+.top-box .top-img{
+	width:100%;
+}
+.top-box .top-img img{
+	width:100%;
+	height:100%;
+}
+
+/*----------------top end-------------*/
+/*----------------coupon start-------------*/
+.coupon{}
+.coupon ul{
+	background-color:#6615A8;
+	padding:20px;
+}
+.coupon ul li{
+	margin-right:20px;
+}
+.coupon ul li img{
+	width:275px;
+}
+.coupon ul li:last-child{
+	margin-right:0px;
+}
+.coupon ul li:hover img {
+	-webkit-animation-name: tada;
+	animation-name: tada;
+}
+/*----------------coupon end-------------*/
+/*----------------product-title start-------------*/
+.product-title {
+	position:relative;
+}
+.product-title .Tanabata-top{
+	width:656px;
+	height:112px;
+	position:absolute;
+	top:-20px;
+	left:272px;
+}
+.product-title .Tanabata-top img{
+	width:656px;
+	height:112px;
+}
+.product-title .qixi{
+	width:402px;
+	height:46px;
+	position:absolute;
+	top:33px;
+	left:393px;
+}
+.product-title .qixi img{
+	width:402px;
+	height:46px;
+}
+.product ul:hover li {
+	-webkit-animation-name: bounce;
+	animation-name: bounce;
+	-webkit-transform-origin: center bottom;
+	transform-origin: center bottom;
+}
+/*----------------product-title end-------------*/
+/*----------------product start-------------*/
+.product{
+	height:440px;
+	background:url(../img/Valentines-Day/product-big-bg.png);
+	background-size: cover;
+	margin-top:113px;
+	padding:20px;
+	box-sizing: border-box;
+}
+.product ul{
+	width:1160px;
+}
+.product ul li{
+	width:275px;
+	height:280px;
+	margin-right:20px;
+	position:relative;
+}
+.product ul li .product-bg{
+	width:275px;
+}
+.product ul li .product-1{
+	width:200px;
+	height:208px;
+	position:absolute;
+	top:63px;
+	left:33px;
+}
+.product ul li .product-2{
+	width:200px;
+	height:170px;
+	position:absolute;
+	top:90px;
+	left:37px;
+}
+.product ul li .product-3{
+	width:200px;
+	height:197px;
+	position:absolute;
+	top:64px;
+	left:37px;
+}
+.product ul li .product-4{
+	width:200px;
+	height:132px;
+	position:absolute;
+	top:128px;
+	left:41px;
+}
+.product ul li:last-child{
+	margin-right:0px;
+}
+.product ul li .product-price{
+	width:235px;
+	height:100px;
+	background-color:white;
+	margin:20px;
+	box-sizing: border-box;
+}
+.product ul li .product-price .price-title{
+	width:153px;
+	height:23px;
+	margin:10px 41px 5px;
+}
+.product ul li .product-price i{
+	font-size:12px;
+	color:#333;
+	font-style:italic;
+	text-decoration:line-through;
+	padding-left:45px;
+}
+.product ul li .product-price .price-1{
+	width:152px;
+	height:32px;
+	margin:0px 42px 5px;
+}
+
+
+/*----------------product end-------------*/
+/*----------------floor-3 start-------------*/
+.floor-3{
+	padding:20px 0px;
+	position:relative;
+}
+.floor-3 .floor-3-title{
+	width:870px;
+	height:72px;
+	padding-left:165px;
+	margin-bottom: 20px;
+}
+.floor-3 .floor-3 img{
+	width:870px;
+	height:72px;
+}
+.floor-3 .floor-3-text{
+	width:273px;
+	height:62px;
+	position:absolute;
+	top:26px;
+	left:463px;
+}
+.floor-3 .floor-3-text img{
+	width:273px;
+	height:62px;
+}
+.floor-3 .floor-3-product-bg{
+	width:1200px;
+	height:476px;
+}
+.floor-3 .floor-product-bg{
+	width:1200px;
+	height:476px;
+}
+.floor-3 ul:hover {
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+}
+.floor-3 ul{
+	width:1200px;
+	height:476px;
+	position:absolute;
+	top:113px;
+	left:0px;
+	box-sizing: border-box;
+}
+.floor-3 ul li{
+	float:left;
+}
+.floor-3 ul li .floor-product{
+	width:361px;
+	height:319px;
+	padding:110px 0px 0px 175px;
+}
+.floor-3 ul li .floor-g-price{
+	width:112px;
+	height:208px;
+	padding-top:60px;
+	margin-left:-44px;
+}
+.floor-3 ul li.floor-text{
+	margin:88px 0px 0px 80px;
+}
+.floor-3 ul li.floor-text>img{
+	display:block;
+	padding:10px 0px;
+}
+.floor-3 ul li.floor-text .text-3{
+	margin-left:140px;
+}
+.floor-3 ul li.floor-text .text-2{
+	margin-left:-15px;
+}
+.floor-3 ul li.floor-text .text-1{
+	margin-left:14px;
+}
+.floor-3 ul li.floor-text .hydration{
+	margin-left:51px;
+}
+.floor-3 ul li.floor-text .floor-3-price{
+	margin-left:1px;
+}
+.floor-3 ol{
+	width:1200px;
+	box-sizing: border-box;
+	margin:20px 0px;
+}
+.floor-3 ol li{
+	float:left;
+	width:285px;
+	height:348px;
+	background:url(../img/Valentines-Day/product-3-bg.png);
+	background-size: cover;
+	margin-right:20px;
+}
+.floor-3 ol li:last-child{
+	margin-right:0px;
+}
+
+.floor-3 ol li .news{
+	width:70px;
+	height:72px;
+	margin:7px 0px 0px 7px;
+}
+.floor-3 ol li .product-3-1{
+	width:176px;
+	height:176px;
+	margin:7px 0px 0px 28px;
+}
+.floor-3 ol li .product-3-2{
+	width:114px;
+	height:216px;
+	margin:-32px 0px 0px 76px;
+}
+.floor-3 ol li .product-3-3{
+	width:97px;
+	height:243px;
+	margin:-58px 0px 0px 87px;
+}
+.floor-3 ol li .product-3-4{
+	width:97px;
+	height:216px;
+	margin:-30px 0px 0px 92px;
+}
+.floor-3 ol li .floor-3-0{
+	width:200px;
+	height:60px;
+	margin:-5px 0px 0px 34px;
+}
+.floor-3 ol li .fall{
+	width:60px;
+	height:60px;
+	margin:10px 0px 0px 115px;
+}
+.floor-3 ol li span{
+	color:white;
+	font-size:20px;
+	display:block;
+	margin:-31px 0px 0px 95px;
+	letter-spacing: 1px;
+}
+
+.floor-3 ol li .floor-3-price-1{
+	width:275px;
+	height:69px;
+	padding-top:49px;
+}
+.floor-3 ol li .floor-3-price-1 img{
+	width:275px;
+	height:69px;
+}
+.floor-3 .price-ol:hover .item-01,
+.floor-3 .price-ol:hover .item-02 {
+	-webkit-animation-name: slideInLeft;
+	animation-name: slideInLeft;
+}
+
+.floor-3 .price-ol:hover .item-03,
+.floor-3 .price-ol:hover .item-04 {
+	-webkit-animation-name: slideInRight;
+	animation-name: slideInRight;
+}
+/*----------------floor-3 end-------------*/
+/*----------------floor-4 start-------------*/
+.floor-4{
+	position:relative;
+}
+.floor-4 .floor-4-title{
+	width:454px;
+	height:67px;
+	background:url(../img/Valentines-Day/floor-4-titbg.png);
+	background-size:cover;
+	margin:70px auto 0px;
+} 
+.floor-4 .floor-4-tit{
+	width:279px;
+	height:42px;
+	margin:10px 0px 0px 80px;
+}
+.floor-4 .watch-bg{
+	width:1200px;
+	height:548px;
+	background:url(../img/Valentines-Day/watch-bg.png);
+	background-size:cover;
+	margin-top:20px;
+	border:1px solid #7342A8;
+	box-sizing: border-box;
+}
+.floor-4 .watch-bg>img{
+	position:absolute;
+}
+.floor-4 .watch-bg .floor-4-product{
+	width:781px;
+	height:489px;
+	top:123px;
+	left:387px;
+}
+.floor-4 .watch-bg .floor-4-text1{
+	width:275px;
+	height:58px;
+	top:158px;
+	left:58px;
+}
+.floor-4 .watch-bg .floor-4-text2{
+	width:216px;
+	height:39px;
+	top:245px;
+	left:85px;
+}
+.floor-4 .watch-bg .floor-4-text2{
+	width:216px;
+	height:39px;
+	top:245px;
+	left:85px;
+}
+.floor-4 .watch-bg .floor-4-text01{
+	width:138px;
+	height:13px;
+	top:325px;
+	left:134px;
+	border-bottom:1px solid white;
+	padding:5px;
+}
+.floor-4 .watch-bg .floor-4-text02{
+	width:176px;
+	height:13px;
+	top:366px;
+	left:134px;
+	border-bottom:1px solid white;
+	padding:5px;
+}
+.floor-4 .watch-bg .floor-4-text03{
+	width:151px;
+	height:13px;
+	top:406px;
+	left:134px;
+	border-bottom:1px solid white;
+	padding:5px;
+}
+.floor-4 .watch-bg i{
+	font-size:18px;
+	color:#827a7c;
+	font-style:italic;
+	text-decoration:line-through;
+	position:absolute;
+	top:492px;
+	left:74px;
+}
+.floor-4 .watch-bg span{
+	font-size:28px;
+	color:#d9114e;
+	font-weight:bold;
+	position:absolute;
+	top:503px;
+	left:162px;
+}
+
+/*----------------floor-4 end-------------*/
+/*----------------floor-5 start-------------*/
+.floor-5{
+	margin-top:20px;
+}
+.floor-5 ul{
+	position:relative;
+	height:542px;
+}
+.floor-5 ul li{
+	position:absolute;
+	top:0px;
+}
+.floor-5 ul li.floor-5-bg1{
+	width:320px;
+	height:542px;
+	background:url(../img/Valentines-Day/floor-5-bg1.png);
+	background-size:cover;
+	left:0px;
+}
+.floor-5 ul li.floor-5-bg2{
+	width:361px;
+	height:542px;
+	left:270px;
+	background:url(../img/Valentines-Day/floor-5-bg2.png);
+	background-size:cover;
+}
+.floor-5 ul li.floor-5-bg3{
+	width:355px;
+	height:542px;
+	left:584px;
+	background:url(../img/Valentines-Day/floor-5-bg3.png);
+	background-size:cover;
+}
+.floor-5 ul li.floor-5-bg4{
+	width:307px;
+	height:542px;
+	left:894px;
+	background:url(../img/Valentines-Day/floor-5-bg4.png);
+	background-size:cover;
+}
+.floor-5 ul li>img{
+	display:block;
+}
+.floor-5 ul li .floor-5-tit1{
+	width:217px;
+	height:89px;
+	padding:30px 0px 0px 40px;
+}
+.floor-5 ul li .floor-5-tit2{
+	width:217px;
+	height:89px;
+	padding:30px 0px 0px 70px;
+}
+.floor-5 ul li .floor-5-tit3{
+	width:217px;
+	height:89px;
+	padding:30px 0px 0px 80px;
+}
+.floor-5 ul li .floor-5-tit4{
+	width:217px;
+	height:89px;
+	padding:30px 0px 0px 65px;
+}
+.floor-5 ul li .floor-5-product1{
+	width:113px;
+	height:248px;
+	padding:40px 0px 0px 90px;
+}
+.floor-5 ul li .floor-5-product2{
+	width:113px;
+	height:248px;
+	padding:40px 0px 0px 117px;
+}
+.floor-5 ul li .floor-5-product3{
+	width:113px;
+	height:248px;
+	padding:40px 0px 0px 138px;
+}
+.floor-5 ul li .floor-5-product4{
+	width:113px;
+	height:248px;
+	padding:40px 0px 0px 110px;
+}
+.floor-5 ul li .floor-5-text1{
+	width:189px;
+	height:49px;
+	padding:57px 0px 0px 41px;
+}
+.floor-5 ul li .floor-5-text2{
+	width:189px;
+	height:49px;
+	padding:57px 0px 0px 63px;
+}
+.floor-5 ul li .floor-5-text3{
+	width:189px;
+	height:49px;
+	padding:57px 0px 0px 68px;
+}
+.floor-5 ul li .floor-5-text4{
+	width:189px;
+	height:49px;
+	padding:57px 0px 0px 63px;
+}
+.floor-5 ul li:hover {
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+}
+/*----------------floor-5 end-------------*/
+/*----------------floor-6 start-------------*/
+.floor-6{
+	width:1200px;
+	height:422px;
+	background:url(../img/Valentines-Day/floor-6-bg.png);
+	background-size:cover;
+	box-sizing: border-box;
+	margin-top:20px;
+	position:relative;
+}
+.floor-6>img{
+	position:absolute;
+}
+.floor-6 .floor-6-product1{
+	width:594px;
+	height:218px;
+	top:118px;
+	left:300px;
+}
+.floor-6 .floor-6-product{
+	width:523px;
+	height:267px;
+	top:142px;
+	left:325px;
+}
+.floor-6 ul{}
+.floor-6 ul li .floor-6-text1{
+	width:195px;
+	height:45px;
+	padding:40px 0px 0px 190px;
+}
+.floor-6 ul li .floor-6-text2{
+	width:195px;
+	height:45px;
+	padding:40px 190px 0px 0px ;
+}
+.floor-6 .floor-6-box{
+	width:1200px;
+	height:120px;
+	background-color:white;
+	margin-top:335px;
+}
+.floor-6 .floor-6-box .floor-6-text3{
+	width:278px;
+	height:84px;
+	padding:18px 0px 0px 270px;
+}
+.floor-6 .floor-6-box .floor-6-price{
+	width:272px;
+	height:84px;
+	padding:18px 270px 0px 0px ;
+}
+.floor-6:hover .floor-6-text1 {
+	-webkit-animation-name: slideInLeft;
+	animation-name: slideInLeft;
+}
+
+.floor-6:hover .floor-6-text2 {
+	-webkit-animation-name: slideInRight;
+	animation-name: slideInRight;
+}
+
+/*--------------foot-----------*/
+.foot{
+	background-color:#8D95C7;
+	height:373px;
+	margin-top:120px;
+	padding-top:30px;
+}
+
+/*-------------floor-search start--------*/
+.search-for{
+	width:1160px;
+	height:45px;
+	background-color:white;
+	margin:30px auto 10px;
+	padding:20px;
+	position:relative;
+}
+.search-for p{
+	font-size:12px;
+	width:700px;
+}
+.search-for p a{
+	color:#386392;
+	padding:0px 10px;
+	border-right:1px solid #ccc;
+}
+.search-for p .last-a{
+	border-right:0px;
+}
+.search-bar{	
+	margin:10px 0px;
+}
+.search-bar span{
+	font-size:12px;
+}
+.search-bar input{
+	width:300px;
+	height:17px;
+	font-size:12px;
+	color:#ccc;
+}
+.back-top{
+	width:80px;
+	height:24px;
+	background-color:#7442A9;
+	text-align: center;
+	position:absolute;
+	top:35px;
+	right:5px;
+}
+.back-top a{
+	width:80px;
+	height:24px;
+	color:white;
+	text-align: center;
+	line-height: 24px;
+	display:block;
+}
+.back-top a:hover{
+	background-color:#F479ED;
+}
+/*-------------floor-search end--------*/
+/*-------------links start--------*/
+ .foot .links-box{
+	height:90px;
+/*	background-color:#F9F7F3;*/
+	text-align: center;
+	position:relative;
+}
+
+ .foot .links-box span{
+	font-size:16px;
+}
+ .foot .links-box img{
+	margin-top:10px;
+}
+/*<!------------linds end--------------->
+<!------------genuine start--------------->*/
+ .foot .genuine{
+	text-align: center !important;
+}
+ .foot .genuine>div{
+	width:150px;
+	text-align: center;
+	padding:20px;
+	float:left;
+	margin-right:40px;
+	margin-top:20px;
+	
+}
+ .foot .genuine img{
+	width:44px;
+	height:44px;
+	margin-right:10px;
+	float:left;
+}
+ .foot .genuine p{
+	line-height: 22px;
+	float:left;
+}
+ .foot .authentic{
+	margin-left:15%;
+}
+/*<!------------genuine end--------------->
+<!------------foot-nav start--------------->*/
+ .foot .foot-nav{
+	margin:30px auto;
+	text-align: center;
+}
+ .foot .foot-nav a{
+	font-size:16px;
+	padding:0px 20px;
+	color:#333;
+	border-right:1px solid #ccc;
+}
+ .foot .foot-nav a:hover{
+	color:#21579A;
+}
+ .foot .foot-nav .last-a{
+	border-right:0px;
+}
+ .foot .cype{
+	text-align:center;
+	margin-bottom:20px;
+}
+ .foot .cype p{
+	font-size:14px;
+	line-height:32px;
+}

@@ -1,0 +1,783 @@
+/*个人简历网页的样式*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #F6F6F8;
+	color: #666666;
+	font-size: 14px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.wrap {
+	width: 100%;
+	position: relative;
+}
+
+
+
+#canv{
+	display: none;
+}
+/*-----------menu------------*/
+
+.menu {
+	width: 100%;
+	height: 60px;
+	background-image: -webkit-radial-gradient(ellipse farthest-corner at center top, #DEF0F2 0%, #7CD4D7 100%);
+    background-image: radial-gradient(ellipse farthest-corner at center top, #DEF0F2 0%, #7CD4D7 100%);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	z-index: 9999;
+}
+
+.menu.fixed {
+	background: rgba(2, 178, 181, 0.2);
+}
+
+.menu .menu-title {
+	position: absolute;
+	top: 0px;
+	left: 50px;
+	margin-top: 10px;
+	color: #02B2B5;
+	font-size: 32px;
+}
+
+.menu .menuTitle {
+	position: absolute;
+	top: 0px;
+	left: 50px;
+	height: 60px;
+	font-size: 32px;
+	color: #02B2B5;
+	padding: 10px 0px;
+	box-sizing: border-box;
+}
+
+.menu .itemContainer {
+	position: absolute;
+	top: 0px;
+	right: 50px;
+	height: 40px;
+	padding: 10px 0px;
+}
+
+.menu .itemContainer a {
+	width: 100px;
+	height: 40px;
+	margin-right: 10px;
+	display: inline-block;
+	color: #666;
+	text-decoration: none;
+	outline: none;
+	border-radius: 30px;
+}
+
+.menu .itemContainer a:hover {
+	background-color: #02B2B5;
+	color: #fff;
+}
+
+.active {
+	background-color: #02B2B5;
+	color: #fff;
+}
+
+.menu a .itemName {
+	display: block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.menu a .fa {
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+
+/*-----------aslide-menu------------*/
+
+.aslide {
+	width: 60px;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	position: fixed;
+	top: 200px;
+	left: 0px;
+	z-index: 9999;
+	text-align: center;
+}
+
+.aslide li {
+	width: 60px;
+	height: 40px;
+	margin-top: 5px;
+	line-height: 40px;
+	background-color: #02B2B5;
+	border-radius: 0px 10px 10px 0px;
+	box-shadow: 0px 0px 10px #A3DFE2;
+}
+
+.aslide li:nth-of-type(2) {
+	background: rgba(2, 178, 181, 0.9);
+}
+
+.aslide li:nth-of-type(3) {
+	background: rgba(2, 178, 181, 0.7);
+}
+
+.aslide li:nth-of-type(4) {
+	background: rgba(2, 178, 181, 0.5);
+}
+
+.aslide li a {
+	color: #666;
+	text-decoration: none;
+	text-align: center;
+}
+
+.aslide li a:hover {
+	color: #FFFFFF;
+}
+
+.aslide li a i {
+	margin-right: 5px;
+}
+
+.menu-image {
+	position: absolute;
+	top: 0px;
+	left: 60px;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: gray;
+	background: rgba(0, 0, 0, 0.3);
+	z-index: 100;
+	display: none;
+}
+
+.menu-image img {
+	width: 50%;
+	margin-left: 25%;
+}
+
+
+/*-----------bar-menu------------*/
+
+.bar {
+	width: 50px;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	z-index: 9999;
+}
+
+.bar li {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	line-height: 50px;
+	text-align: center;
+	background-color: #02B2B5;
+	opacity: 0.9;
+	margin-bottom: 5px;
+	box-shadow: 0px 0px 10px #A3DFE2;
+}
+
+.bar li a {
+	color: #666;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+.bar li a:hover {
+	color: #fff;
+}
+
+
+/*-----------banner------------*/
+
+.banner {
+	width: 100%;
+	height: 350px;
+	background: #F6F6F8;
+	margin: 0px auto;
+	margin-top: 60px;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	/*border: 1px solid #02B2B5;
+	border-width: 1px 0px 1px 0px;*/
+}
+
+.banner_b {
+	position: relative;
+	margin-top: 80px;
+}
+iframe {
+	position: absolute;
+	z-index: 9;
+	width: 100%;
+	height: 500px;
+}
+#slide {
+	margin: 0 auto;
+	width: 760px;
+	height: 300px;
+	position: relative;
+	z-index: 999;
+}
+
+#slide li {
+	position: absolute;
+	width: 760px;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-box;
+	align-items: flex-start;
+	-moz-box-align: flex-start;
+	-webkit-align-items: flex-start;
+	background: #FFFFFF;
+	overflow: hidden;
+	box-shadow: 0 0 10px #A3DFE2;
+}
+
+#slide li img {
+	width: 100%;
+	height: 100%;
+}
+
+.arrow .prev,
+.arrow .next {
+	position: absolute;
+	width: 64px;
+	top: 20%;
+	z-index: 9;
+	opacity: 0.3;
+	color: #02B2B5;
+	cursor: pointer;
+}
+
+.arrow .fa {
+	font-size: 50px;
+}
+
+.arrow .prev {
+	left: -220px;
+}
+
+.arrow .next {
+	right: -220px;
+}
+
+.arrow .prev:hover,
+.arrow .next:hover {
+	color: #02B2B5;
+	opacity: 0.7;
+}
+
+
+/*-----------About me------------*/
+
+.about-me {
+	width: 80%;
+	height: 470px;
+	margin: 10px auto 0px;
+	display: flex;
+	color: #02B2B5;
+	background: linear-gradient(45deg, #DEF0F2, #7CD4D7);
+	background-size: contain;
+}
+
+.about-me .me-theme {
+	width: 30%;
+	height: 200px;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	padding-left: 15%;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+
+.about-me .me-theme li {
+	margin-bottom: 5px;
+}
+
+.about-me .me-theme .image {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: green;
+	overflow: hidden;
+}
+
+.about-me .me-theme .image img {
+	width: 100%;
+}
+
+.about-me b {
+	display: block;
+	font-family: arial;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.about-me .me-theme .liner {
+	width: 60px;
+	height: 2px;
+	background-color: #02B2B5;
+}
+
+.about-me .me-content {
+	flex: 1;
+	height: 470px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+
+.me-content .me-content-top {}
+
+.me-content .me-content-top span {
+	display: block;
+	height: 2px;
+	width: 60px;
+	background-color: #02B2B5;
+}
+
+.me-content .me-content-item {
+	width: 550px;
+	height: 390px;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.me-content .me-content-item li {
+	width: 120px;
+	height: 120px;
+	float: left;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0px 30px 10px 10px;
+	border: 2px dotted #fff;
+	animation-iteration-count: 5;
+}
+
+.me-content .me-content-item li:hover {
+	-webkit-transform: scale(1.1);
+	box-shadow: 0px 20px 20px #A3DFE2;
+}
+
+.me-content .me-content-item li p {
+	text-align: center;
+	line-height: 120px;
+	font-size: 20px;
+	font-weight: 500;
+	margin: 0px;
+}
+
+.me-content .me-content-item li .detail {
+	font-size: 18px;
+	display: none;
+	background: rgba(2, 178, 181, 0.5);
+	color: #fff;
+}
+
+.me-content .me-content-item li:hover .title {
+	display: none;
+}
+
+.me-content .me-content-item li:hover .detail {
+	display: block;
+}
+
+.me-content .me-content-item li:first-child {
+	background: url(../img/jianli/me3.jpg) no-repeat content-box;
+	background-size: 100%;
+}
+
+.me-content .me-content-item li:last-child {
+	background: url(../img/jianli/me1.jpg) no-repeat content-box;
+	background-size: 100%;
+}
+
+
+/*-----------work------------*/
+
+.work {
+	width: 80%;
+	height: 470px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.work ul {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #02B2B5;
+	border-width: 0px 1px 1px 1px;
+	list-style: none;
+}
+
+.work ul li {
+	float: left;
+	width: 33.3333%;
+	height: 205px;
+	text-align: center;
+	background: rgba(2, 178, 181, 0.1);
+}
+
+.work ul li:hover {
+	-webkit-transform: translateY(-5px);
+	box-shadow: 0px 5px 20px #A3DFE2;
+}
+
+.work ul li h3 {
+	margin-top: 50px;
+}
+
+.work ul li:nth-of-type(1) {
+	background: url(../img/jianli/sucai33.jpg) no-repeat center;
+	background-size: 100%;
+}
+
+.work ul li:nth-of-type(1):hover {
+	background: url(../img/jianli/sucai3.jpg) no-repeat center;
+	background-size: 100%;
+}
+
+.work ul li:nth-of-type(3) {
+	background: url(../img/jianli/sucai44.jpg) no-repeat center;
+	background-size: 100%;
+}
+
+.work ul li:nth-of-type(3):hover {
+	background: url(../img/jianli/sucai4.jpg) no-repeat center;
+	background-size: 100%;
+}
+
+.work ul li:nth-of-type(5) {
+	background: url(../img/jianli/sucai55.jpg) no-repeat center;
+	background-size: 100%;
+}
+
+.work ul li:nth-of-type(5):hover {
+	background: url(../img/jianli/sucai5.jpg) no-repeat center;
+	background-size: 100%;
+}
+
+
+/*-----------skill------------*/
+
+.skill {
+	width: 80%;
+	height: 400px;
+	margin: 0 auto;
+}
+
+
+/*-----------标题部分------------*/
+
+.skill-title {
+	width: 100%;
+	height: 60px;
+	border-bottom: 2px solid #02B2B5;
+	/*margin-bottom: 5px;*/
+	font-size: 24px;
+	line-height: 60px;
+	font-weight: 500;
+	color: #FFF;
+	background: url(../img/jianli/sucai17.jpg) no-repeat left;
+	background-size: contain;
+	padding-left: 30px;
+	box-sizing: border-box;
+}
+
+
+/*-----------标题部分------------*/
+
+.skill .skill-item {
+	width: 100%;
+	height: 330px;
+	background: url(../img/jianli/bgd.png) no-repeat center;
+	background-size: cover;
+	overflow: hidden;
+	/*background:radial-gradient(at center,#DEF0F2, #7CD4D7);*/
+}
+
+.skill .skill-item .ball {
+	display: block;
+	width: 330px;
+	height: 330px;
+	margin: 0 auto;
+	margin-right: 45%;
+	position: relative;
+}
+
+.skill .skill-item .ball a {
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	text-align: center;
+	white-space: nowrap;
+	font-size: 24px;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/*-----------main------------*/
+
+.main {
+	width: 80%;
+	height: 300px;
+	background-color: #F6F6F8;
+	margin: 0 auto;
+	position: relative;
+	/*border-top: 1px solid #02B2B5;*/
+}
+
+.main ul {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.main ul li {
+	width: 25%;
+	float: left;
+	list-style: none;
+	font-size: 110px;
+}
+
+.main ul li a {
+	text-decoration: none;
+	color: #02B2B5;
+}
+
+.main li:first-child {
+	display: block;
+}
+
+.main li p {
+	margin: 0px;
+	font-size: 20px;
+}
+
+.main li p.english {
+	font-size: 12px;
+}
+
+
+/*-----------works-------------*/
+
+.works-banner {
+	width: 80%;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.works-banner .works-content {
+	width: 100%;
+	height: 440px;
+	background: url(../img/jianli/bga.png) no-repeat center;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.works-banner .works-content ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	position: relative;
+}
+
+.works-banner .works-content ul li {
+	position: absolute;
+	width: 200px;
+}
+
+.works-banner .works-content ul li:nth-of-type(1) {
+	top: 45px;
+	left: 0px;
+}
+
+.works-banner .works-content ul li:nth-of-type(2) {
+	top: 115px;
+	left: 205px;
+}
+
+.works-banner .works-content ul li:nth-of-type(3) {
+	top: 155px;
+	left: 410px;
+}
+
+.works-banner .works-content ul li:nth-of-type(4) {
+	top: 165px;
+	left: 615px;
+}
+
+.works-banner .works-content ul li:nth-of-type(5) {
+	top: 195px;
+	left: 820px;
+}
+
+.works-banner .works-content ul li img {
+	width: inherit;
+}
+
+.works-banner .works-content ul li img:hover {
+	animation: all 1s ease-out;
+	transform: scale(1.2);
+	z-index: 99999;
+}
+
+
+/*-----------more-works-------------*/
+
+.more-works {
+	width: 80%;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.more-works .more-works-content {
+	width: 100%;
+	height: 440px;
+	background: url(../img/jianli/sucai18.jpg) no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+
+.more-works-content ul {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 440px;
+	list-style: none;
+}
+
+.more-works-content ul li {
+	float: left;
+	width: 28%;
+	margin-top: 10%;
+	margin-right: 5%;
+	margin-left: 6%;
+}
+
+.more-works-content ul li:last-child {
+	margin-right: 0px;
+}
+
+.more-works-content ul li #canvas {
+	width: 200px;
+	height: 200px;
+	/*border: 3px solid deeppink;*/
+	display: block;
+}
+
+.more-works-content ul .letou {
+	width: 200px;
+	height: 200px;
+	position: relative;
+}
+
+.letou #plate {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.letou #static {
+	width: 80px;
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+.more-works-content ul .big {
+	width: 180px;
+	height: 180px;
+	border: 1px solid #02B2B5;
+	position: relative;
+}
+
+.big .box {
+	width: 20px;
+	height: 20px;
+	background-color: #02B2B5;
+	position: absolute;
+	top: 80px;
+	left: 80px;
+}
+
+.more-works-content .more-works-title {
+	position: absolute;
+	width: 100%;
+	top: 10%;
+}
+
+.more-works-content .more-works-title>div {
+	float: left;
+	width: 27%;
+	padding-left: 7%;
+	box-sizing: border-box;
+	margin-right: 5%;
+	font-size: 24px;
+	color: #02B2B5;
+	white-space: nowrap;
+}
+
+.more-works-content .more-works-title .fa {
+	font-size: 30px;
+	margin-right: 5px;
+}
+
+
+/*-----------bottom-------------*/
+
+#bottom {
+	width: 100%;
+	height: 40px;
+	margin-top: 10px;
+	background: rgba(2, 178, 181, 0.5);
+	box-shadow: -5px -5px 10px -4px #A3DFE2;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	color: #fff;
+}

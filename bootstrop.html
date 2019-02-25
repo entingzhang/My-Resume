@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			/*gohome*/
+			.gohome {
+				position: fixed;
+				right: 100px;
+				bottom: 30px;
+				z-index: 9999;
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				background-color: red;
+				background-color: #fff;
+			}
+			
+			.gohome a {
+				display: block;
+				width: 80px;
+				height: 80px;
+				text-decoration: none;
+				text-align: center;
+				line-height: 80px;
+				font-size: 24px;
+				font-weight: 500;
+				color: #3cb04b;
+			}
+			
+			li .input {
+				margin-top: 30px;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			a:-webkit-any-link {
+				text-decoration: none
+			}
+			
+			.thumbnail {
+				font-size: 30px;
+				background-color: #3cb04b;
+				color: #FFFFFF;
+				text-align: center;
+				height: 80px;
+				line-height: 80px;
+				width: 80px;
+			}
+			
+			a .ziti {
+				font-size: 20px;
+			}
+			
+			.banner {
+				width: 100%;
+			}
+			
+			.carousel-control {
+				opacity: initial;
+			}
+			
+			a.right.carousel-control,
+			a.left.carousel-control {
+				background-image: none;
+			}
+			
+			.buttom-area {
+				height: 50px;
+				background-color: #3CB04B;
+				text-align: center;
+				line-height: 50px;
+				color: #fff;
+			}
+			
+			.listarea li {
+				background-color: #3CB04B;
+			}
+			
+			.listarea li .fa {
+				color: #FFFFFF;
+				font-size: 16px;
+				/*display: none;*/
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="gohome animated bounce infinite">
+			<a href="index.html">Home</a>
+		</div>
+		<div class="visible-xs">
+			<div class="container xs-head">
+				<ul class="cow list-unstyled">
+					<li>
+						<h3>海阔天空</h3>
+						<p>个人相册</p>
+					</li>
+					<li>
+						<input type="search" class="input form-control" placeholder="关键字......" />
+					</li>
+				</ul>
+				<ul class="list-group listarea">
+					<li class="lista list-group-item">
+						<a href="#"><i class="fa fa-list"></i><span>目录</span></a>
+					</li>
+					<li class="lista list-group-item">
+						<a href="#"><i class="fa fa-home"></i><span>主页</span></a>
+					</li>
+					<li class="lista list-group-item">
+						<a href="#"><i class="fa fa-clone"></i><span>介绍</span></a>
+					</li>
+					<li class="lista list-group-item">
+						<a href="#"><i class="fa fa-building"></i><span>作品集</span></a>
+					</li>
+					<li class="lista list-group-item">
+						<a href="#"><i class="fa fa-refresh"></i><span>联系</span></a>
+					</li>
+				</ul>
+			</div>
+			<div class="container xs-banner">
+				<div id="carousel-example-generic" class="carousel slide banner" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					</ol>
+
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="img/bootstrop/slide3.jpg" />
+						</div>
+						<div class="item ">
+							<img src="img/bootstrop/slide4.jpg" />
+						</div>
+						<div class="item ">
+							<img src="img/bootstrop/slide2.jpg" />
+						</div>
+						<div class="item ">
+							<img src="img/bootstrop/slide1.jpg" />
+						</div>
+					</div>
+
+					<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<div class="xs-footer">
+				<div class="buttom-area col-lg-12">
+					<span class="btn">copyright<i class="fa fa-copyright" aria-hidden="true"></i>非凡学院</span>
+				</div>
+			</div>
+		</div>
+		<div class="visible-lg">
+			<!--头部-->
+			<div class="container box-head">
+				<ul class="cow list-unstyled">
+					<li class="pull-left">
+						<h3>海阔天空</h3>
+						<p>个人相册</p>
+					</li>
+					<li class="pull-right col-lg-5">
+						<input type="search" class="input form-control" placeholder="关键字......" />
+					</li>
+				</ul>
+			</div>
+			<!--图标-->
+			<div class="container box-menu">
+				<div class="cow">
+					<div class="col-xs-6 col-lg-2">
+						<a href="#" class="thumbnail">
+							<span class="ziti">perv</span>
+						</a>
+					</div>
+					<div class="col-xs-6 col-lg-2">
+						<a href="#" class="thumbnail">
+							<span class="glyphicon glyphicon-home"></span>
+						</a>
+					</div>
+					<div class="col-xs-6 col-lg-2">
+						<a href="#" class="thumbnail">
+							<span class="glyphicon glyphicon-wrench"></span>
+						</a>
+					</div>
+					<div class="col-xs-6 col-lg-2">
+						<a href="#" class="thumbnail">
+							<span class="glyphicon glyphicon-picture"></span>
+						</a>
+					</div>
+					<div class="col-xs-6 col-lg-2">
+						<a href="#" class="thumbnail">
+							<span class="glyphicon glyphicon-phone"></span>
+						</a>
+					</div>
+					<div class="col-xs-6 col-lg-2">
+						<a href="#" class="thumbnail">
+							<span class="ziti">next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="container box-banner">
+				<div id="carousel-example-generic" class="carousel slide banner" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					</ol>
+
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="img/bootstrop/slide3.jpg" />
+						</div>
+						<div class="item ">
+							<img src="img/bootstrop/slide4.jpg" />
+						</div>
+						<div class="item ">
+							<img src="img/bootstrop/slide2.jpg" />
+						</div>
+						<div class="item ">
+							<img src="img/bootstrop/slide1.jpg" />
+						</div>
+					</div>
+
+					<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+
+			</div>
+			<div class="container box-footer">
+				<div class="buttom-area col-lg-12">
+					<span class="btn">copyright<i class="fa fa-copyright" aria-hidden="true"></i>非凡学院</span>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.easing.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.rotate.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".lista:not(:first)").each(function() {
+					$(this).find("i").hide();
+				});
+				$(".lista").eq(0).find("span").hide();
+				$(".lista").each(function() {
+					$(this).click(function() {
+						$(this).find("i").show().parents(".lista").siblings(".lista").find("i").hide();
+						$(this).find("span").hide().parents(".lista").siblings(".lista").find("span").show();
+					});
+				});
+			})
+		</script>
+	</body>
+
+</html>

@@ -233,6 +233,7 @@ body {
 	background-size: cover;
 	position: relative;
 	overflow: hidden;
+	border-bottom: 2px solid #02B2B5;
 	/*border: 1px solid #02B2B5;
 	border-width: 1px 0px 1px 0px;*/
 }
@@ -247,6 +248,14 @@ iframe {
 	width: 100%;
 	height: 500px;
 }
+iframe {
+	position: absolute;
+	z-index: 9;
+	width: 100%;
+	height: 500px;
+	border: 2px solid #02B2B5;
+}
+
 #slide {
 	margin: 0 auto;
 	width: 760px;
@@ -309,7 +318,7 @@ iframe {
 .about-me {
 	width: 80%;
 	height: 470px;
-	margin: 10px auto 0px;
+	margin: 0 auto 0px;
 	display: flex;
 	color: #02B2B5;
 	background: linear-gradient(45deg, #DEF0F2, #7CD4D7);
